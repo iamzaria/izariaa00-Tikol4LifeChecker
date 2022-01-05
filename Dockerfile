@@ -1,4 +1,7 @@
-FROM php:7.4-cli
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
+FROM php:latest
+
+COPY . /app
+
+WORKDIR /app
+
 CMD [ "php", "./index.php" ]
